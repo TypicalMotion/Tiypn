@@ -71,21 +71,47 @@ header .navbar {
 }
 
 header .navbar-default {
-	background-color: orange;
+	background-color: #ffa02b;
 	border: none;
 	margin-bottom: 0px;
 	position: relative;
 	-webkit-box-shadow: 0 15px 19px -19px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 15px 19px -19px rgba(0, 0, 0, 0.1);
+
 }
 
 header .navbar-default .navbar-header {
 	z-index: 1030;
 	position: relative;
 	background: orange;
+
 }
 
 /*== Logo ==*/
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 82px;
+  text-align: center;
+  display: inline-block;
+  transition: ease all 0.5s;
+}
+
+
+.hvr4:hover { 
+    width: 6%;
+    height: 6%;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+
+.container {
+
+  width: 80%;
+}
 
 .navbar-brand {
 	float: left;
@@ -187,7 +213,7 @@ header .navbar-default .navbar-header {
 
 .iq-search .search-btn::before {
 	content: "\f002";
-	font-family: "FontAwesome";
+	font-family: "sans-serif";
 	font-size: 14px;
 	font-weight: normal;
 	left: 0;
@@ -235,7 +261,7 @@ header .navbar-default .navbar-header {
 
 .top-nav ul li a {
 	color: #fff;
-	font-family: ;
+	font-family:sans-serif; ;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -275,7 +301,7 @@ header .navbar-default .navbar-header {
 }
 
 .login-signup ul li a {
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
 	color: #636363;
 	text-decoration: none;
@@ -291,7 +317,7 @@ header .navbar-default .navbar-header {
 .login-signup ul li a.custom-b {
 	background: #09294c;
 	border-radius: 3px;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-weight: 500;
 	color: #fff;
 	padding: 10px 23px;
@@ -324,7 +350,7 @@ header .navbar-default .navbar-header {
 }
 
 .help-box ul li a {
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-weight: 400;
 	color: #636363;
 	text-decoration: none;
@@ -376,7 +402,7 @@ header .navbar-default .navbar-header {
 }
 
 .nav-box ul li a {
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
 	color: #636363;
 	text-decoration: none;
@@ -397,7 +423,7 @@ header .navbar-default .navbar-header {
 
 .main-product {
 	background-color: white;
-	background-image: url('../images/bg_main.png');
+	background-image: url('https://raw.githubusercontent.com/TypicalMotion/Tiypn/master/bg1.png');
 	padding-bottom: 180px;
 	background-position: center center;
 }
@@ -410,7 +436,7 @@ header .navbar-default .navbar-header {
 }
 
 .find-box h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 500;
 	color: #fff;
 	font-size: 48px;
@@ -419,7 +445,8 @@ header .navbar-default .navbar-header {
 }
 
 .find-box h4 {
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
+
 	font-weight: 300;
 	color: #fff;
 	font-size: 22px;
@@ -561,28 +588,28 @@ header .navbar-default .navbar-header {
 }
 
 .box-img {
-	background: white;
+	width: 700px;
+	background: transparent;
 	text-align: center;
-	padding-bottom: 30px;
-	min-height: 280px;
-	margin-bottom: 30px;
+	padding-bottom: 0px;
+	padding-left: 560
+	margin-bottom: 0px;
+	border-radius: 40px;
 	position: relative;
-	border-bottom: solid orange 3px;
 	transition: ease all 0.5s;
 	-webkit-box-shadow: 0 15px 19px -19px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 15px 19px -19px rgba(0, 0, 0, 0.1);
 }
 
 .box-img h4 {
-	color: #fff;
+	color: orange;
 	padding-top: 35px;
 	padding-bottom: 30px;
 	font-size: 25px;
 	font-weight: 500;
 	transition: all 0.3s ease 0s;
 	letter-spacing: 0px;
-	-webkit-box-shadow: 0 15px 19px -19px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 15px 19px -19px rgba(0, 0, 0, 0.1);
+	
 }
 
 .box-img:hover {
@@ -647,7 +674,7 @@ header .navbar-default .navbar-header {
 	font-weight: 400;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 }
 
 .cat-main-box .panel .panel-body p {
@@ -684,7 +711,7 @@ header .navbar-default .navbar-header {
 	color: #263238;
 	padding-bottom: 30px;
 	line-height: 32px;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 }
 
 .exciting_box p {
@@ -782,7 +809,7 @@ header .navbar-default .navbar-header {
 }
 
 .right-buyer h4 {
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #09294c;
@@ -791,7 +818,7 @@ header .navbar-default .navbar-header {
 }
 
 .right-buyer h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-size: 35px;
 	font-weight: 400;
 	color: #09294c;
@@ -807,7 +834,7 @@ header .navbar-default .navbar-header {
 .right-buyer p {
 	margin: 0px;
 	font-weight: 300;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-size: 16px;
 	line-height: 32px;
 	padding-bottom: 45px;
@@ -818,7 +845,7 @@ header .navbar-default .navbar-header {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	padding: 16px 28px;
 	display: inline-block;
 	border-radius: 2px;
@@ -831,7 +858,7 @@ header .navbar-default .navbar-header {
 }
 
 .left-supplier h4 {
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #09294c;
@@ -840,7 +867,7 @@ header .navbar-default .navbar-header {
 }
 
 .left-supplier h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-size: 35px;
 	font-weight: 400;
 	color: #09294c;
@@ -856,7 +883,7 @@ header .navbar-default .navbar-header {
 .left-supplier p {
 	margin: 0px;
 	font-weight: 300;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-size: 16px;
 	line-height: 32px;
 	padding-bottom: 45px;
@@ -867,7 +894,7 @@ header .navbar-default .navbar-header {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	padding: 17px 29px;
 	display: inline-block;
 	border-radius: 2px;
@@ -889,7 +916,7 @@ header .navbar-default .navbar-header {
 
 .main-products h2 {
 	font-weight: 700;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	color: #09294c;
 	padding-bottom: 30px;
 	font-size: 14px;
@@ -933,7 +960,7 @@ header .navbar-default .navbar-header {
 
 .dit-t h4 {
 	font-size: 15px;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 600;
 	color: #333333;
 	margin-bottom: 3px;
@@ -942,7 +969,7 @@ header .navbar-default .navbar-header {
 
 .dit-t p {
 	font-size: 12px;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-weight: 300;
 	color: #acacac;
 	margin: 0px;
@@ -958,7 +985,7 @@ header .navbar-default .navbar-header {
 	border-radius: 2px;
 	color: #09294c;
 	font-size: 13px;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-weight: 700;
 	float: right;
 	padding: 6px 15px;
@@ -970,7 +997,7 @@ header .navbar-default .navbar-header {
 	border-radius: 2px;
 	color: #a5a5a5;
 	font-size: 11px;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
 	padding: 6px 15px;
 }
@@ -1022,7 +1049,7 @@ header .navbar-default .navbar-header {
 .footer-top h2 {
 	color: #fff;
 	font-size: 22px;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 26px;
 }
@@ -1041,7 +1068,7 @@ header .navbar-default .navbar-header {
 	border-radius: 2px;
 	padding-left: 30px;
 	font-size: 15px;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	padding-right: 140px;
 	border-radius: 50px;
 }
@@ -1068,7 +1095,7 @@ header .navbar-default .navbar-header {
 
 .help-box-f h4 {
 	color: #fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	padding: 4px 0px;
@@ -1076,7 +1103,7 @@ header .navbar-default .navbar-header {
 
 .help-box-f p {
 	color: #fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-size: 13px;
 	font-weight: 300;
 	margin: 0px;
@@ -1092,7 +1119,7 @@ header .navbar-default .navbar-header {
 
 .left-f-box h2 {
 	color: #fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	padding: 0 0 0 10px;
@@ -1228,7 +1255,7 @@ header .navbar-default .navbar-header {
 .left-works-box h2 {
 	font-size: 50px;
 	color: #333335;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-weight: 300;
 	padding-bottom: 30px;
 }
@@ -1238,7 +1265,7 @@ header .navbar-default .navbar-header {
 }
 
 .left-works-box p {
-	font-family: 'Raleway', sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	margin: 0px;
@@ -1252,7 +1279,7 @@ header .navbar-default .navbar-header {
 
 .form-email-box h3 {
 	color: #333335;
-	font-family: 'Raleway', sans-serif;
+	font-family: , sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	padding-bottom: 15px;
@@ -1269,7 +1296,7 @@ header .navbar-default .navbar-header {
 	border-radius: 2px;
 	min-height: 51px;
 	padding-left: 21px;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 	font-size: 14px;
 }
 
@@ -1285,7 +1312,7 @@ header .navbar-default .navbar-header {
 	border-radius: 2px;
 	padding: 11px 15px;
 	margin: 5px 7px;
-	font-family: 'Raleway', sans-serif;
+	font-family:  sans-serif;
 }
 
 .right-works-box {}
