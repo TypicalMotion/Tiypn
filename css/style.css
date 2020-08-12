@@ -98,6 +98,11 @@ header .navbar-default .navbar-header {
   transition: ease all 0.5s;
 }
 
+img.test {
+    width: 300%;
+    height: auto;
+}
+
 
 .hvr4:hover { 
     width: 6%;
