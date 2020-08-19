@@ -18,6 +18,11 @@
     <title>Home</title>
     <link type="text/css" rel="stylesheet" href="css/index.css" />
     <style>
+
+      * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
       /* Popup container - can be anything you want */
       .popup {
         position: relative;
@@ -28,7 +33,12 @@
         -ms-user-select: none;
         user-select: none;
       }
-
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
       /* The actual popup */
       .popup .popuptext {
         visibility: hidden;
@@ -44,7 +54,11 @@
         left: 50%;
         margin-left: -80px;
       }
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
       /* Popup arrow */
       .popup .popuptext::after {
         content: "";
@@ -89,8 +103,44 @@
         border-radius: 2%;
 
       }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-      .button {
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+      .button20 {
         background-color: ;
         /* Green */
         border: none;
@@ -114,18 +164,17 @@
 
       .button2 {
         color: #4A4A4A;
-        border: 0px solid #4A4A4A;
+        border: 0px solid #45A4A4A;
         font-family: sans-serif;
         font-weight: 700;
         font-size: 50px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-bottom: -30px;
-        margin-top: -90px;
+       
+        margin-top: -0px;
         position: relative;
         text-align: center;
         z-index: ;
-        position: relative;
+  
+        transform:;
 
 
       }
@@ -141,11 +190,9 @@
           padding-left: 0px;
           padding-right: 5px;
           padding-bottom: 20px;
-
-
           margin-top: 0px;
           text-align: center;
-          transform: translate(80%, -100%);
+          transform: translate(25%, -100%);
           float: left;
         }
       }
@@ -226,17 +273,15 @@
       }
 
       .button4 {
-        background-color: #f0f0f0;
+        
         color: #732929;
         border: 0px solid #7d4545;
-        border-radius: 40px;
+       
         margin-bottom: 00px;
 
-        padding-left: 0px;
-        padding-right: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 200px;
+        margin-top: 0px;
         text-align: center;
       }
 
@@ -246,8 +291,8 @@
         border: 0px solid #7d4545;
         border-radius: 0px;
         margin-bottom: 0px;
-        padding-left: 220px;
-        padding-right: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-bottom: 0px;
         margin-top: 0px;
         text-align: center;
@@ -327,21 +372,38 @@
         font-size: 16.4px;
         padding-top: 0px;
         padding-left: 0px;
-        padding-right: 0px;
-        margin-bottom: -5px;
+        padding-right: 15px;
+        margin-bottom: -px;
         margin-top: 0px;
-        margin-left: 28px;
+        margin-left: 15px;
         letter-spacing: -0.2px;
         display: inline-block;
         text-decoration: none;
-        z-index: 1;
+       
+        position: relative;
+      }
+       .button72 {
+        color: #2d2d2d;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 16.4px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 15px;
+        margin-bottom: -px;
+        margin-top: 0px;
+        margin-left: 15px;
+        letter-spacing: -0.2px;
+        display: inline-block;
+        text-decoration: none;
+       
         position: relative;
       }
 
       .button8 {
         color: #783838;
         font-family: sans-serif;
-        33 font-weight: 700;
+        font-weight: 700;
         font-size: 100px;
         margin-left: 20%;
         margin-right: 20%;
@@ -557,8 +619,13 @@
 
     <bar class="bar">
       <other class="center">
-        <a href="" class="button7 hvr2">in construction</a>
+        <a href="" class="button7 hvr2">home</a>
+        <a href="products" class="button7 hvr2">products</a>
+         <a href="" class="button7 hvr2">about</a>
+        <a href="contact" class="button7 hvr2">contact</a>
+        
       </other>
+
     </bar>
 
 
@@ -570,34 +637,76 @@
       <div class="w3-main w3-content" style="max-width:1100px;margin-top:83px">
 
 
+</div>
+<br>
+
+
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+
+
+  <!-- Modal content -->
+  
+  
+</div>
+
         </main>
         <!-- Photo grid -->
-        <main class="button4">
+         <div class="card">
+          <div class="slideshow-container">
 
-          <div class="button13">
 
-            <div class="w3-row">
+          <div class="slideshow-container">
 
-              <div class="row clearfix">
-                <div class="button17">
-                  <div class="button16">
+</div>
 
-                  </div>
-                </div>
-                <div class="box-img">
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div> 
+ 
+  <input type="checkbox" id="zoomCheck">
+  <label for="zoomCheck">
+<img src="https://raw.githubusercontent.com/TypicalMotion/Tiypn/master/Tiypn%20MockUp_Back%20(0-00-00-02).png" alt="TiypnTee" style="width:100%">
+  </label>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+ 
+  
 
-                  <h4>Tiypn T-Shirt</h4>
+</div>
 
-                  <a href="tiypnback.html">
+  
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <input type="checkbox" id="zoomCheck">
+  <label for="zoomCheck">
+ <img src="https://raw.githubusercontent.com/TypicalMotion/Tiypn/master/Tiypn%20MockUp_FrontV2%20(0-00-00-02).png" alt="TiypnTeeBack" style="width:100%">
+   </label>
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+</div>
 
-                   <img class="test" src="https://raw.githubusercontent.com/TypicalMotion/Tiypn/master/Tiypn%20MockUp_Back%20(0-00-00-02).png" alt=""/>
-                  </a>
-                  <div class="button13">
-                    <main class="button15">
-                      <main class="button19">
-                        <div>High quality streetwear t-shirt designed by tiypn. Click the shirt to see the back.</div>
-                        <div class="col-lg-3 col-sm-6 col-md-3">
-                          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+ 
+
+  <a class="button2">TIYPN T-SHIRT</a> 
+
+
+  <div class="slideshow-container">
+ <div class="card">
+  <div style="text-align:center">
+<div class="slideshow-container">
+
+
+  <p class="price">$19.99</p>
+  <p>High quality merch designed by tiypn</p>
+   <p>First shirt of tiypn starting today, pre order now before its too late!</p>
+   <p>NON-REFUNDABLE and cotton</p>
+   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_cart">
                             <input type="hidden" name="business" value="limitedartzoffical@gmail.com">
                             <input type="hidden" name="lc" value="US">
@@ -611,10 +720,12 @@
                             <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
                             <table>
                               <tr>
-                                <td><input type="hidden" name="on0" value="" TIYPN" T-SHIRT">"TIYPN" T-SHIRT</td>
+                                
+                                
+                              
                               </tr>
                               <tr>
-                                <td><select name="os0">
+                                <select style="display: block; margin: 0 auto;" name="os0">
 
                                     <option value="Small (17.5 W 26.63 L )">SMALL (17.5 W 26.63 L) $20.00 USD</option>
                                     <option value="Medium (19.5 W 28 L)">MEDIUM (19.5 W 28 L) $20.00 USD</option>
@@ -629,14 +740,13 @@
                             <input type="hidden" name="option_select2" value="Large (21.25 W  29.38 L)">
                             <input type="hidden" name="option_amount2" value="20.00">
                             <input type="hidden" name="option_index" value="0">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
-                              border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
-                              height="1">
-                          </form>
-                        </div>
+                              <p><button>Pre Order</button></p>
+                            
+   
+</div> 
 
-
+  </div>
+   
 
 
 
@@ -657,11 +767,66 @@
 <!-- scripts -->
 <script src="../particles.js"></script>
 <script src="js/app.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 <div id="particles-js"></div>
 <script src="fadescript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="particles.js"></script>
 <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 
 </html>
