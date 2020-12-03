@@ -1,0 +1,316 @@
+  body {
+    background-image:url(backgrounds/bannerimg.png);
+  }
+
+  .center {
+      position:absolute;
+      top:40%;
+      left:8%;
+      font-size:20px;
+      background-color:rgba(0,0,0,0.2);
+      border: 2px solid rgba(0,0,0,0.1);
+      padding:10px;
+      font-family:arial;
+      width:450px;
+      animation:1s cubic-bezier(.3,0,0,0.8) centerIn;
+    }
+
+    @keyframes centerIn {
+      from {transform:translate(-30%,0); opacity:0}
+      to {}
+    }
+    
+    #ti {
+      background-color:var(--og);
+      color:black;
+      font-weight:700;
+      font-size:40px;
+      letter-spacing:-0.5px;
+      line-height:43px;
+    }
+    
+  #og {
+      background-color:black;
+      color:var(--og);
+      font-weight:700;
+      font-size:30px;
+  }
+    
+  #co {
+      display:block;
+      margin-top:5px;
+      padding-bottom:8px;
+      color:var(--th)
+  }
+
+  .shirts {
+    position:absolute;
+    top:45px;
+    right:-4%;
+  }
+
+  .shirts img {
+    margin:-40vh;
+    border-radius:19vh;
+  }
+
+  #top {
+    transform:translate(-35%,86.5%) rotate(-10deg);
+    width:56vh;
+    z-index:1;
+    transition:0.4s cubic-bezier(.54,0,0,1);
+    animation:top 1s
+  }
+
+  #top:hover {
+    transform:translate(-35%,86.5%) rotate(-10deg) scale(1.05,1.05);
+  }
+
+  @keyframes top {
+    0%{width:65vh; opacity:0;}
+    5%{width:65vh; opacity:0;}
+    to{}
+  }
+
+  #bot {
+    position:absolute;
+    transform:translate(-80.7%,69%) rotate(8deg);
+    width:60vh;
+    z-index:0;
+    transition:0.4s cubic-bezier(.54,0,0,1);
+    animation:bot 1.2s
+  } 
+
+  #bot:hover {
+    transform:translate(-80.7%,69%) rotate(8deg) scale(1.05,1.05);
+  }
+  /*this code could be better but it works nonetheless. sorry IE users!*/
+
+  @keyframes bot {
+    0%{width:57vh; opacity:0;}
+    20%{width:57vh; opacity:0}
+    100%{}
+  }
+
+  .buffer {
+    float:left;
+    width:100%;
+    height:100vh;
+  }
+
+  .cluster {
+    display:block;
+    font-family:arial;
+    color:var(--th);
+    text-align:center;
+    z-index:-900;
+    padding-top:10px;
+    background-color:var(--bg2);
+  }
+
+  .cluster h1 {
+    display:inline-block;
+    font-size:37px;
+    margin:0;
+    background-color:var(--th);
+    color:var(--th2);
+  }
+
+  .cluster span {
+    font-size:22px;
+  }
+
+  .contact a {
+    font-size:35px;
+    color:gray;
+    transition:0.2s;
+  }
+
+  .contact a:hover {
+    color:var(--th)
+  }
+
+  .slideshow-container {
+    max-width: 70%;
+    min-width:1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width:20px;
+    margin:4px;
+    margin-top:-22px;
+    padding: 14px;
+    color: gray;
+    border-radius:80px;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+    transition: 0.3s;
+  }
+
+  .prev {
+    left:0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev:hover, .next:hover {
+    color:white;
+    transform:scale(1.1,1.1);
+    background-color:rgba(255,255,255,0.2);
+    border-radius:500px;
+  }
+
+  .prev:active, .next:active {
+    transform:scale(1,1);
+  }
+
+  .numbertext {
+    position:absolute;
+    text-align:center;
+    width:98%;
+    color: #f2f2f2;
+    font-size: 24px;
+    font-weight:700;
+    padding: 8px 12px;
+    top: 0;
+    text-shadow:0 2px 5px black
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .colcontain {
+    background-color:var(--bg3);
+    padding-top:10px;
+  }
+
+@media only screen and (orientation:portrait) {
+
+  .center {
+      position:absolute;
+      top:56px;
+      left:0;
+      border: 0px solid black;
+      text-align:center;
+      width:100%;
+    }
+
+    @keyframes centerIn {
+      from {transform:translate(0,-10%); opacity:0;}
+      to {}
+    }
+
+    .shirts {
+      position:absolute;
+      top:17%;
+      right:0;
+      left:35%;
+    }
+  
+    .shirts img {
+      margin:0%;
+      border-radius:12vh;
+    }
+  
+    #top {
+      transform:translate(-14%,0) rotate(-10deg);
+      margin-top:36vh;
+      width:45vh;
+      z-index:1;
+      transition:0.4s cubic-bezier(.54,0,0,1);
+      animation:top 1s
+    }
+  
+    #top:hover {
+      transform:translate(-14%,0) rotate(-10deg);
+    }
+    
+    #top:active {
+      transform:translate(-14%,0) rotate(-10deg) scale(1.1,1.1);
+    }
+  
+    @keyframes top {
+      0%{transform:translate(40px,0) rotate(-10deg); opacity:0;}
+      25%{transform:translate(40px,0) rotate(-10deg); opacity:0;}
+      to{}
+    }
+  
+    #bot {
+      position:absolute;
+      transform:translate(0,0) rotate(8deg);
+      width:45vh;
+      left:0;
+      margin:-200px;
+      margin-top:7vh;
+      z-index:0;
+      animation:bot 1.2s
+    } 
+  
+    #bot:hover {
+      transform:translate(0,0) rotate(8deg);
+    }
+
+    #bot:active {
+      transform:translate(0,0) rotate(8deg) scale(1.1,1.1);
+    }
+
+    @keyframes bot {
+      0%{transform:translate(-40px,0) rotate(8deg); opacity:0;}
+      32%{transform:translate(-40px,0) rotate(8deg); opacity:0;}
+      to{}
+    }
+
+    .slideshow-container {
+      max-width: 100%;
+      min-width:100%;
+    }
+
+    .prev, .next {
+      margin:9%;
+      top:18%;
+      background-color:rgba(255,255,255,0.2);
+    }
+  }

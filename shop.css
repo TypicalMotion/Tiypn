@@ -1,0 +1,178 @@
+.content {
+  margin-top:55px;
+  padding-bottom:-50px;
+  box-shadow:0 0 0 black;
+}
+
+.content h1 {
+  font-family:arial;
+  font-size:32px;
+  margin:0;
+  display:inline-block;
+  color:var(--th2);
+  background-color:var(--th);
+}
+
+#stylet {
+  color:var(--th);
+  font-size:18px;
+  font-family:arial;
+}
+
+.cluster {
+  position:relative;
+  display:block;
+  padding-top:20px;
+  padding-bottom:20px;
+  width:100%;
+}
+
+.boxx {
+  display:inline-block;
+  background-position:top;
+  background-size:cover;
+  font-family:arial;
+  text-align:left;
+  vertical-align:bottom;
+  text-decoration:none;
+}
+
+.boxa {
+  width:33.3%;
+  height:400px;
+  margin:-2px;
+  animation:1s boxfade;
+}
+
+.boxb {
+  width:250px;
+  height:100%;
+  margin:1px;
+  margin-top:8px;
+  box-shadow:0px 2px 10px rgba(0,0,20,0.8);
+  transition:0.2s cubic-bezier(0,0,0,0.70);
+}
+
+.boxb:hover {
+  transform:translate(0,-7px);
+  box-shadow:0px 10px 20px rgba(0,0,20,0.5);
+}
+
+.boxx .btn {
+  color:black;
+  background-color:rgba(0,0,0,0.25);
+  border:2px solid black;
+}
+
+.boxx .btn:hover {
+  color:white;
+  background-color:black;
+  box-shadow:4px 4px 0px rgba(0,0,0,0.25)
+}
+
+.boxb h1 {
+  background:none;
+  color:white;
+  margin-top:216px;
+  display:block;
+  text-align:center;
+  font-size:25px;
+  letter-spacing:6px;
+  background-color:rgba(0,0,0,0.5);
+}
+
+#small {
+  width:20%;
+  height:320px;
+}
+
+#small .child {
+  margin-top:40px;
+}
+
+#invert {
+  color:white;
+}
+
+#invert #title, #invert #xtra {
+  background-color:white;
+  color:black;
+}
+
+#invert .btn {
+  color:white;
+  border:2px solid white;
+  background-color:rgba(255,255,255,0.2);
+}
+
+#invert .btn:hover {
+  background-color:rgba(255,255,255,1);
+  color:black;
+}
+
+#invert .child {
+  background-color:rgba(2555,255,255,0.2);
+}
+
+.child {
+  background-color:rgba(0,0,0,0.25);
+  position:relative;
+  display:inline-block;
+  max-height:250px;
+  margin-left:4%;
+  margin-right:8%;
+  margin-top:95px;
+  padding:5px;
+  padding-bottom:10px;
+  border:2px solid rgba(0,0,0,0.2);
+}
+
+#title {
+  background-color:black;
+  color:white;
+  font-weight:700;
+  top:20px;
+  font-size:34px;
+}
+
+#xtra {
+  background-color:black;
+  color:white;
+  font-size:22px;
+  font-weight:700;
+}
+
+.su {
+  color:var(--og) !important
+}
+
+#desc {
+  display:inline-block;
+  font-size:17px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+h1, span {
+  animation:1.5s cubic-bezier(.09,.01,.26,1) txtfade
+}
+
+@keyframes txtfade {
+  from{opacity:0}
+  to{opacity:1}
+}
+
+.catrow {
+  animation:0.8s cubic-bezier(.09,.01,.26,1) catfade
+}
+
+@keyframes catfade {
+  from{opacity:0;transform:translate(0,20px)}
+  to{opacity:1;}
+}
+
+@keyframes boxfade {
+  0%{opacity:0; transform:translate(0,-20px)}
+  15%{opacity:0; transform:translate(0,-20px)}
+  100%{}
+}
