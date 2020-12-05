@@ -38,6 +38,7 @@ body.light-theme {
   --bg4: #323334;
   --bg3h: #37383A;
   --btnbg: rgba(255,255,255,0.25);
+  --h1: white;
 }
 
 @media (prefers-color-scheme: light) {
@@ -179,6 +180,7 @@ body.light-theme {
   background-color:#191919;
   font-family:arial;
   padding-top:20px;
+ 
 }
 
 .footer span {
@@ -282,8 +284,8 @@ body.light-theme {
 .box #btitle {
   font-size:30px;
   font-weight:700;
-  color:var(--th2);
-  background-color:var(--th)
+  color: var(--th);
+  background-color:
 }
 
 .box #bprice {
