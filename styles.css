@@ -2,7 +2,10 @@
   color: var(--th2);
   background:var(--thb);
 }
-  
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}    
 html {
     scroll-behavior: smooth;
     overflow-x:hidden;
