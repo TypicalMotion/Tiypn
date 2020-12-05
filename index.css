@@ -111,9 +111,10 @@
   .cluster h1 {
     display:inline-block;
     font-size:37px;
+    padding-bottom:0px;
     margin:0;
-    background-color:var(--th);
-    color:var(--th2);
+    background-color: ;
+    color:var(--bg1);
   }
 
   .cluster span {
