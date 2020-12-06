@@ -22,11 +22,4 @@ const btn = document.querySelector(".toggle");
               }
               localStorage.setItem("theme", theme);
             });
-            
-//function changeIcon(x) {
-//     x.classList.toggle("fa-sun");
-//}
-
-if (currentTheme == "light") {
-    x.classList.toggle("fa-sun")
-}
+           
