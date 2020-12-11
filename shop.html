@@ -23,6 +23,29 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script></head>
 <body>
   <a class="toggle"><i class="fas fa-adjust"></i></a><script src="dark.js"></script>
+  <a id="burger" onclick="sideOpen()"><i class="fas fa-bars"></i></a>
+  <a id="cross" onclick="sideClose()"><i class="fas fa-times"></i></a>
+  <div class="sidemenu" id="sideid">
+    <h1>TIYPN</h1>
+      <ul>
+          <a href="#"><li>home<i class="fas fa-home"></i></li></a>
+          <a href="shop.html"><li>shop<i class="fas fa-shopping-cart"></i></i></li></a>
+          <a href="#about"><li>about<i class="fas fa-question"></i></li></a>
+          <a href="#contact"><li>contact<i class="fas fa-comments"></i></li></a>
+          <hr>
+          <a href="#contact"><li>shirts</li></a>
+          <a href="#contact"><li>hoodies</li></a>
+          <hr>
+          <div class="fixedb">
+              <a href="https://www.instagram.com/t1ypn/" id="circle"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/t1ypn" id="circle"><i class="fab fa-twitter"></i></a>
+              <a href="mailto:tiypnthetiger@gmail.com" id="circle"><i class="far fa-envelope"></i></a><br>
+              <a href="#">T&C</a>
+              <a href="#">Privacy</a>
+          </div>
+      </ul>
+  </div>
+  <div id="sidedecline" onclick="sideClose()"></div> <!--This makes it so if you tap outside the sidebar it closes.-->
     <ul id="nav">
         <li><a href="index.html"><img src="logo/tiypn350.png" id="navimg"></a>
         <li id="txt"><a href="shop.html" class="active">shop</a> 
@@ -31,7 +54,7 @@
     </ul>
 <div class="content">
       <div class="cluster">
-        <h1>BROWSE BY CATEGORY</h1><br>
+        <h1>BROWSE CATEGORY</h1><hr>
         <span id="stylet">Find what you're after by a clothing category</span>
         <br>
     </a>
@@ -44,10 +67,25 @@
       </a>
     </div>
     <div class="cluster">
-      <h1>BROWSE RELEASES</h1><br>
+      <h1>LATEST RELEASES</h1><hr> <!--This section is where you put your best (preferrably in x4. EG: 4, 8 or 12) pieces of merch. This could be replaced with 'Popular Merch' or something.-->
+        <span id="stylet">See the top latest and freshest TIYPN™ releases.</span><br>
+        <a class="box" href="product/gicshirt.html">
+            <img src="clothingimages/shirt1f.png" class="bimg" onmouseover="this.src='clothingimages/shirt1b.png'" onmouseout="this.src='clothingimages/shirt1f.png'" height="300px" alt=""/><br>
+            <span id="btitle">'GREECE IN MOTION' T-SHIRT</span><br> <!--max 2 lines for title.-->
+            <span id="bprice">$19.99</span><!--max 1 line. <b></b> on an area will change colour-->
+        </a>
+        <a class="box" href="product/gichoodie.html">
+            <img src="clothingimages/hoodie1f.png" class="bimg" onmouseover="this.src='clothingimages/hoodie1b.png'" onmouseout="this.src='clothingimages/hoodie1f.png'" height="300px" alt=""/><br>
+            <span id="btitle">'GREECE IN MOTION' HOODIE</span><br>
+            <span id="bprice">$34.99</span>
+        </a>
+        <br>
+    </div>
+    <div class="cluster">
+      <h1>BROWSE RELEASES</h1><hr>
       <span id="stylet">A compilation of all TIYPN releases.</span>
   </div>
-    <div class="boxx boxa" style="background-image:url(backgrounds/gim.png)">
+    <div class="boxx boxa" style="background-image:url(backgrounds/gim.png)"> <!--box or boxb options-->
         <div class="child">
           <span id="title">'GREECE IN MOTION'</span><br>
           <span id="xtra" class="su">LATEST RELEASE</span><br>
@@ -55,51 +93,48 @@
           <a class="btn" href=categories/greece_in_motion.html>SEE RELEASE</a>
         </div>
     </div>
-    <!--<div class="box boxa" style="background-image:url(backgrounds/mountain.png)" id="invert">
-        <div class="child">
-          <span id="title">'THIS IS'</span><br>
-          <span id="xtra">NOT EVEN EXISTANT</span><br>
-          <span id="desc">how is there even a description here? well the answer is this is a placeholder text. this means absolutely nothing.</span><br>
-          <a class="btn" href=shop.html>SEE RELEASE</a>
-        </div>
-    </div>
-    <br>
-    <br>
-   <div class="box boxa" id="small" style="background-image:url(backgrounds/mountain.png)">
-        <div class="child">
-          <span id="title">'THIS IS'</span><br>
-          <span id="xtra">NOT EVEN EXISTANT</span><br>
-          <span id="desc">how is there even a description here? well the answer is this is a placeholder text. this means absolutely nothing.</span><br>
-          <a class="btn" href=shop.html>SEE RELEASE</a>
-        </div>
-    </div>-->
+  <div class="boxx boxa" style="background-image:url(backgrounds/gim.png)"> <!--box or boxb options-->
+      <div class="child">
+        <span id="title">'GREECE IN MOTION'</span><br>
+        <span id="xtra" class="su">LATEST RELEASE</span><br>
+        <span id="desc">'Greece in Motion' is a beautiful lineup designed around the embracement of both empowerment and simplicity.</span><br>
+        <a class="btn" href=categories/greece_in_motion.html>SEE RELEASE</a>
+      </div>
   </div>
-    <div class="footer">
-      <div class="slice">
-          <span>SHOP</span><br>
-          <a href="#">T-Shirts</a>
-          <a href="#">Hoodies</a>
-      </div>
-      <div class="slice">
-          <span>HELP:</span><br>
-          <a href="#contact">Contact</a>
-          <a href="#">Sizing</a>
-          <a href="#">FAQ</a>
-      </div>
-      <div class="slice">
-          <span>TERMS:</span><br>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-      </div>
-      <div class="slice">
-          <span>FIND TIYPN:</span><br>
-          <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i>@t1ypn</a>
-          <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i>@t1ypn</a>
-          <a href="mailto:tiypnthetiger@gmail.com" style="width:200px;"><i class="far fa-envelope"></i>tiypnthetiger@gmail.com</a>
-      </div>
-         <br>
-         <span id=col>COPYRIGHT © 2020, TIYPN</span>
-     </div>
+  <div class="boxx boxa" style="background-image:url(backgrounds/gim.png)"> <!--box or boxb options-->
+    <div class="child">
+      <span id="title">'GREECE IN MOTION'</span><br>
+      <span id="xtra" class="su">LATEST RELEASE</span><br>
+      <span id="desc">'Greece in Motion' is a beautiful lineup designed around the embracement of both empowerment and simplicity.</span><br>
+      <a class="btn" href=categories/greece_in_motion.html>SEE RELEASE</a>
+    </div>
+</div></div>
+<div class="footer">
+  <div class="slice">
+      <span>SHOP</span><br>
+      <a href="#">T-Shirts</a><br>
+      <a href="#">Hoodies</a><br>
+  </div>
+  <div class="slice">
+      <span>HELP:</span><br>
+      <a href="#contact">Contact</a><br>
+      <a href="#">Sizing</a><br>
+      <a href="#">FAQ</a><br>
+  </div>
+  <div class="slice">
+      <span>TERMS:</span><br>
+      <a href="#">Terms & Conditions</a><br>
+      <a href="#">Privacy Policy</a><br>
+  </div>
+  <div class="slice">
+      <span>FIND TIYPN:</span><br>
+      <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i>@t1ypn</a><br>
+      <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i>@t1ypn</a><br>
+      <a href="mailto:tiypnthetiger@gmail.com" id="wide"><i class="far fa-envelope"></i>tiypnthetiger@gmail.com</a><br>
+  </div>
+     <br>
+     <span id=col>COPYRIGHT © 2020, TIYPN</span>
 </div>
 </body>
 </html>
+<!--TIYPN MERCHANDISE WEBSITE DESIGNED BY WUULFY-->

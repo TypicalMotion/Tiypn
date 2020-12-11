@@ -1,6 +1,5 @@
 .content {
   margin-top:55px;
-  padding-bottom:-50px;
   box-shadow:0 0 0 black;
 }
 
@@ -175,4 +174,53 @@ h1, span {
   0%{opacity:0; transform:translate(0,-20px)}
   15%{opacity:0; transform:translate(0,-20px)}
   100%{}
+}
+
+@media only screen and (orientation:portrait) {
+  .boxx {
+    display:inline-block;
+    background-position:top;
+    background-size:cover;
+    font-family:arial;
+    text-align:left;
+    vertical-align:bottom;
+    text-decoration:none;
+  }
+  
+  .boxa {
+    width:50%;
+    height:auto;
+    padding-bottom:20px;
+    margin:-2px;
+    animation:1s boxfade;
+  }
+
+  .child {
+    background:none;
+    text-align:center;
+    display:inline-block;
+    border:0px;
+    max-height:250px;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:10px;
+    padding:5px;
+    padding-bottom:10px;
+  }
+
+  .child .btn {
+    font-size:19px;
+  }
+
+  #title {
+    background-color:black;
+    color:white;
+    font-weight:700;
+    top:20px;
+    font-size:27px;
+  }
+
+  #xtra {
+    font-size:17px;
+  }
 }

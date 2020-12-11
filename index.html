@@ -11,8 +11,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="">
     <meta name="theme-color" content="#ffffff">
-    <meta content=#2fd571 name=msapplication-TileColor>
-    <meta content=#2fd571 name=theme-color>
+    <meta content=var(--og) name=msapplication-TileColor>
+    <meta content=var(--og) name=theme-color>
     <meta property="og:title" content="tiypn | quality clothing">
     <meta property="og:site_name" content="">
     <meta property="og:url" content="https://tiypn.com">
@@ -24,7 +24,29 @@
 </head>
 <body>
     <a class="toggle"><i class="fas fa-adjust"></i></a><script src="dark.js"></script>
-    <a class="burger"><i class="fas fa-bars"></i></a>
+    <a id="burger" onclick="sideOpen()"><i class="fas fa-bars"></i></a>
+    <a id="cross" onclick="sideClose()"><i class="fas fa-times"></i></a>
+    <div class="sidemenu" id="sideid">
+      <h1>TIYPN</h1>
+        <ul>
+            <a href="#"><li>home<i class="fas fa-home"></i></li></a>
+            <a href="shop.html"><li>shop<i class="fas fa-shopping-cart"></i></i></li></a>
+            <a href="#about"><li>about<i class="fas fa-question"></i></li></a>
+            <a href="#contact"><li>contact<i class="fas fa-comments"></i></li></a>
+            <hr>
+            <a href="#contact"><li>shirts</li></a>
+            <a href="#contact"><li>hoodies</li></a>
+            <hr>
+            <div class="fixedb">
+                <a href="https://www.instagram.com/t1ypn/" id="circle"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/t1ypn" id="circle"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:tiypnthetiger@gmail.com" id="circle"><i class="far fa-envelope"></i></a><br>
+                <a href="#">T&C</a>
+                <a href="#">Privacy</a>
+            </div>
+        </ul>
+    </div>
+    <div id="sidedecline" onclick="sideClose()"></div> <!--This makes it so if you tap outside the sidebar it closes.-->
     <ul id="nav">
         <li><a href="#"><img src="logo/tiypn350.png" id="navimg"></a>
         <li id="txt"><a href="shop.html">shop</a> 
@@ -35,18 +57,17 @@
     <a href="product/gichoodie.html"><img src="clothingimages/hoodie1f.png" id="bot" alt="hoodie"></a> <!--change all of these except id=""-->
     <a href="product/gicshirt.html"><img src="clothingimages/shirt1b.png" id="top" alt="shirt"></a>
     </div>
-    <div class="center"> <!--This class is for front page content.-->
-        <span id="ti">'GREECE IN MOTION'</span><br><!--Title-->
-        <span id="og">NOW RELEASED!</span><!--Subtitle. Can be things like 'NOW RELEASED' or 'ON SALE'-->
-        <span id="co">A set of beautiful merchandise designed for embracing simplicity and power.</span> <!--Mini description with max of 2 lines-->
-        <a class="btn" href=shop.html>SHOP NOW</a><a class="btn" href="categories/greece_in_motion.html" style="margin-left:10px">SEE MORE</a>
+    <div class="center"> <!--This class is for top of page content.-->
+        <span id="ti">'GREECE IN MOTION'</span><br>
+        <span id="og">CHRISTMAS SALE!</span>
+        <span id="co">Streetwear beautifully crafted with simplicity and power in mind. <b>Only on till January 6th. Grab some before it's too late.</b></span> <!--Mini description with max of 3 lines: recommended 2-->
+        <a class="btn" href=categories/greece_in_motion.html>SHOP NOW</a>
+        <a class="btn" href="shop.html" style="margin-left:10px">VISIT SHOP</a>
     </div>
-
 <div class="buffer"></div>
     <div class="content">
      <div class="cluster"> <!--This section is where you put your best (preferrably in x4. EG: 4, 8 or 12) pieces of merch. This could be replaced with 'Popular Merch' or something.-->
-        <h1>LATEST RELEASES</h1><br>
-<hr class="solid">
+        <h1>LATEST RELEASES</h1><hr>
         <span>The top latest and freshest TIYPN™ releases.</span><br>
         <a class="box" href="product/gicshirt.html">
             <img src="clothingimages/shirt1f.png" class="bimg" onmouseover="this.src='clothingimages/shirt1b.png'" onmouseout="this.src='clothingimages/shirt1f.png'" height="300px" alt=""/><br>
@@ -61,36 +82,49 @@
         <br>
         <a class="btn" href="shop.html" style="margin-bottom:12px;">SHOP NOW</a>
         <br>
-
     <div class="colcontain">
-        <h1>IN THE WILD</h1><br>
-<hr class="solid">
+        <h1>IN THE WILD</h1><hr>
         <span>A small gallery for TIYPN™ merchandise in the wild.</span><br><br>
- <div class="slideshow-container"> <!--ensure all your source images are 1280x560.-->
-    <div class="mySlides fade">
+ <div class="slideshow-container"> <!--ALL IMAGES MUST BE 1280x560.-->
+    <div class="slide fade">
       <div class="numbertext">1 of 3</div>
-      <img src="showcaseimages/greece1.png" style="width:100%">
+      <img src="showcaseimages/show1.png" style="width:100%">
     </div>
-    <div class="mySlides fade">
+    <div class="slide fade">
       <div class="numbertext">2 of 3</div>
-      <img src="showcaseimages/greece2.png" style="width:100%">
+      <img src="showcaseimages/show2.png" style="width:100%">
     </div>
-    <div class="mySlides fade">
+    <div class="slide fade">
         <div class="numbertext">3 of 3</div>
-        <img src="showcaseimages/greece3.png" style="width:100%">
+        <img src="showcaseimages/show3.png" style="width:100%">
       </div>
     <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
     <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>
   </div>
 </div>
-  <script src="slideshow.js"></script>
-    <br><h1 id="about">ABOUT TIYPN™</h1><br>
+<script src="slideshow.js"></script>
+<!--These images here are for mobile. Recommended 3 images. Always include button(s) on bottom
+ or exclude them. ALL IMAGES SHOULD BE 1:1 OR 4:3 ASPECT RATIO. CAN BE SLIGHTLY OFF-->
 
-    <span>TIYPN is a brand of merchandise.</span><br><br>
-<hr class="solid">
-    <div class="contact colcontain">
-        <h1 id="contact">FIND US</h1><br>
-
+<div class="mobileimages">
+    <img src="showcaseimages/show1m.png" style="width:100%">
+    <div class="mbut">
+    <a href="https://twitter.com/t1ypn/status/1325499294892363776/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/p/CHT7YRlnxSV/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <img src="showcaseimages/show2m.png" style="width:100%">
+    <div class="mbut">
+    <a href="https://twitter.com/t1ypn/status/1326305832242307072/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/p/CHbZL-THsm7/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <img src="showcaseimages/show3m.png" style="width:100%">
+    <div class="mbut">
+    <a href="https://twitter.com/t1ypn/status/1325499294892363776/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/p/CHT7YRlnxSV/"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+    <div class="contact">
+        <h1>FIND US</h1><hr>
         <span>We're on multiple platforms. Find us here:</span><br>
         <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i></a>
@@ -98,30 +132,31 @@
     </div>
    <div class="footer">
     <div class="slice">
-        <span>SHOP</span><br>
-        <a href="#">T-Shirts</a>
-        <a href="#">Hoodies</a>
+        <span>SHOP</span><hr>
+        <a href="#">T-Shirts</a><br>
+        <a href="#">Hoodies</a><br>
     </div>
     <div class="slice">
-        <span>HELP:</span><br>
-        <a href="#contact">Contact</a>
-        <a href="#">Sizing</a>
-        <a href="#">FAQ</a>
+        <span>HELP:</span><hr>
+        <a href="#contact">About TIYPN</a><br>
+        <a href="#">Sizing</a><br>
+        <a href="#">FAQ</a><br>
     </div>
     <div class="slice">
-        <span>TERMS:</span><br>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
+        <span>TERMS:</span><hr>
+        <a href="#">Terms & Conditions</a><br>
+        <a href="#">Policies</a><br>
     </div>
     <div class="slice">
-        <span>FIND TIYPN:</span><br>
-        <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i>@t1ypn</a>
-        <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i>@t1ypn</a>
-        <a href="mailto:tiypnthetiger@gmail.com" style="width:200px;"><i class="far fa-envelope"></i>tiypnthetiger@gmail.com</a>
+        <span>FIND TIYPN:</span><hr>
+        <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i>@t1ypn</a><br>
+        <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i>@t1ypn</a><br>
+        <a href="mailto:tiypnthetiger@gmail.com" id="wide"><i class="far fa-envelope"></i>tiypnthetiger@gmail.com</a><br>
     </div>
        <br>
-       <span id=col>COPYRIGHT © 2020, TIYPN</span>
+       <span id=col>© COPYRIGHT TIYPN 2020</span>
    </div>
 </div></div>
 </body>
 </html>
+<!--TIYPN MERCHANDISE WEBSITE DESIGNED BY WUULFY-->

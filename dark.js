@@ -22,4 +22,17 @@ const btn = document.querySelector(".toggle");
               }
               localStorage.setItem("theme", theme);
             });
-           
+            
+function sideOpen() {
+  document.getElementById("sideid").style.display = "inline-table";
+  document.getElementById("sidedecline").style.display = "block";
+  document.getElementById("burger").style.display = "none";
+  document.getElementById("cross").style.display = "inline-block";
+}
+
+function sideClose() {
+  document.getElementById("sideid").style.display = "none";
+  document.getElementById("sidedecline").style.display = "none";
+  document.getElementById("burger").style.display = "inline-block";
+  document.getElementById("cross").style.display = "none";
+}
