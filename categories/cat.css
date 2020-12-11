@@ -18,3 +18,8 @@ span {
   color:var(--th);
   font-size:20px;
 }
+
+#head {
+  color:var(--ogx);
+  background-color:#161616;
+}

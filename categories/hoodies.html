@@ -23,6 +23,29 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script></head>
 <body>
   <a class="toggle"><i class="fas fa-adjust"></i></a><script src="../dark.js"></script>
+  <a id="burger" onclick="sideOpen()"><i class="fas fa-bars"></i></a>
+  <a id="cross" onclick="sideClose()"><i class="fas fa-times"></i></a>
+  <div class="sidemenu" id="sideid">
+    <h1>TIYPN</h1>
+      <ul>
+          <a href="#"><li>home<i class="fas fa-home"></i></li></a>
+          <a href="shop.html"><li>shop<i class="fas fa-shopping-cart"></i></i></li></a>
+          <a href="#about"><li>about<i class="fas fa-question"></i></li></a>
+          <a href="#contact"><li>contact<i class="fas fa-comments"></i></li></a>
+          <hr>
+          <a href="#contact"><li>shirts</li></a>
+          <a href="#contact"><li>hoodies</li></a>
+          <hr>
+          <div class="fixedb">
+              <a href="https://www.instagram.com/t1ypn/" id="circle"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/t1ypn" id="circle"><i class="fab fa-twitter"></i></a>
+              <a href="mailto:tiypnthetiger@gmail.com" id="circle"><i class="far fa-envelope"></i></a><br>
+              <a href="#">T&C</a>
+              <a href="#">Privacy</a>
+          </div>
+      </ul>
+  </div>
+  <div id="sidedecline" onclick="sideClose()"></div> <!--This makes it so if you tap outside the sidebar it closes.-->
     <ul id="nav">
         <li><a href="../index.html"><img src="../logo/tiypn350.png" id="navimg"></a>
         <li id="txt"><a href="../shop.html" class="active">shop</a> 
