@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="fadeoff" lang="en" xml:lang="en">
 <head>
-<title>t-shirts - tiypn.</title>
+<title>greece in motion shirt - tiypn.</title>
 <link rel="stylesheet" type="text/css" href="../styles.css">
 <link rel="stylesheet" type="text/css" href="prod.css">
   <link rel="shortcut icon" href="../logo/favicon.png"/>
@@ -21,10 +21,12 @@
     <meta property="og:image" content="logo/tiypn350.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script></head>
-    <!--CHANGE BOTH "BACKGROUND-IMAGE"S. IF NO BG LEAVE AS URL()-->
     <style>
+      /*CHANGE BOTH BACKGROUND IMAGES AND "--OGX"
+      OGX CHANGES THE COLOUR THEME*/
       body {
-        background-image:url(../backgrounds/gimt.png)
+        background-image:url(../backgrounds/gimt.png);
+        --ogx: #EB7E03;
       }
 
       .wide {
@@ -35,6 +37,29 @@
     </style>
 <body>
   <a class="toggle"><i class="fas fa-adjust"></i></a><script src="../dark.js"></script>
+  <a id="burger" onclick="sideOpen()"><i class="fas fa-bars"></i></a>
+  <a id="cross" onclick="sideClose()"><i class="fas fa-times"></i></a>
+  <div class="sidemenu" id="sideid">
+    <h1>TIYPN</h1>
+      <ul>
+          <a href="#"><li>home<i class="fas fa-home"></i></li></a>
+          <a href="shop.html"><li>shop<i class="fas fa-shopping-cart"></i></i></li></a>
+          <a href="#about"><li>about<i class="fas fa-question"></i></li></a>
+          <a href="#contact"><li>contact<i class="fas fa-comments"></i></li></a>
+          <hr>
+          <a href="#contact"><li>shirts</li></a>
+          <a href="#contact"><li>hoodies</li></a>
+          <hr>
+          <div class="fixedb">
+              <a href="https://www.instagram.com/t1ypn/" id="circle"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/t1ypn" id="circle"><i class="fab fa-twitter"></i></a>
+              <a href="mailto:tiypnthetiger@gmail.com" id="circle"><i class="far fa-envelope"></i></a><br>
+              <a href="#">T&C</a>
+              <a href="#">Privacy</a>
+          </div>
+      </ul>
+  </div>
+  <div id="sidedecline" onclick="sideClose()"></div> <!--This makes it so if you tap outside the sidebar it closes.-->
     <ul id="nav">
         <li><a href="../index.html"><img src="../logo/tiypn350.png" id="navimg"></a>
         <li id="txt"><a href="../shop.html" class="active">shop</a> 
@@ -42,46 +67,70 @@
         <li id="txt"><a href="../index.html#contact">contact</a>
     </ul>
 <div class="content">
-    <div class="cluster">
-      <div class="wide">
-      <img src="../clothingimages/shirt1f.png" onmouseover="this.src='../clothingimages/shirt1b.png'" onmouseout="this.src='../clothingimages/shirt1f.png'" height="300px" alt="" class="offset"/>
-      <!--<h2>hey why is this an issue</h2>-->
-      <div class="prod">
-        <h1>'GREECE IN MOTION T-SHIRT'</h1><br>
-        <span style="background-color:var(--th3); color:black;">LIMITED TIME ONLY</span><br>
-        <span>$19.99</span>
-        <p>TIYPN's first shirt starting today.<br>
-          Order before its too late!<br>
-          <br><b>NON-REFUNDABLE and cotton</b></p>
+    <h1>TIYPN SHIRT</h1><br>
+    <h1 id="sd">LIMITED EDITION</h1>
+    <div class="slideshow-container"> <!--ALL IMAGES MUST BE 1:1 ASPECT RATIO.-->
+      <div class="slide fade">
+        <div class="numbertext">FRONT</div>
+        <img src="../clothingimages/shirt1f.png" style="width:100%">
       </div>
-      <a class="btn" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=cca88badb326a&mfid=1605806300950_cca88badb326a#/checkout/openButton">ORDER NOW</a>
+      <div class="slide fade">
+        <div class="numbertext">BACK</div>
+        <img src="../clothingimages/shirt1b.png" style="width:100%">
       </div>
-    <div class="footer">
-      <div class="slice">
-          <span>SHOP</span><br>
-          <a href="#">T-Shirts</a>
-          <a href="#">Hoodies</a>
+      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>
+    </div>
+    <script src="../slideshow.js"></script>
+    <hr>
+    <h1>$19.99</h1><br>
+    <span>High quality merch designed by tiypn<br>
+      First hoodie of tiypn starting today, order now before its too late!<br>
+      <a href="#">NON-REFUNDABLE</a> and cotton<br>
+    </span>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="P8BZDL572UKL8">
+      <div id="bselect"> <!--Because CSS selection is such a horrible mess-->
+      <select name="os0">
+        <option value="Small">Small: $20.00 USD</option>
+        <option value="Medium">Medium: $20.00 USD</option>
+        <option value="Large">Large: $20.00 USD</option>
+      </select>
+      <i class="fas fa-caret-right"></i>
       </div>
-      <div class="slice">
-          <span>HELP:</span><br>
-          <a href="#contact">Contact</a>
-          <a href="#">Sizing</a>
-          <a href="#">FAQ</a>
-      </div>
-      <div class="slice">
-          <span>TERMS:</span><br>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-      </div>
-      <div class="slice">
-          <span>FIND TIYPN:</span><br>
-          <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i>@t1ypn</a>
-          <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i>@t1ypn</a>
-          <a href="mailto:tiypnthetiger@gmail.com" style="width:200px;"><i class="far fa-envelope"></i>tiypnthetiger@gmail.com</a>
-      </div>
-         <br>
-         <span id=col>COPYRIGHT © 2020, TIYPN</span>
-     </div>
+      <br>
+      <input type="hidden" name="currency_code" value="USD">
+      <button class="btn">Order</button><br>
+      <span>(via paypal)</span>
+      </form>
+      <div class="footer">
+        <div class="slice">
+            <span>SHOP</span><hr>
+            <a href="#">T-Shirts</a><br>
+            <a href="#">Hoodies</a><br>
+        </div>
+        <div class="slice">
+            <span>HELP:</span><hr>
+            <a href="#contact">About TIYPN</a><br>
+            <a href="#">Sizing</a><br>
+            <a href="#">FAQ</a><br>
+        </div>
+        <div class="slice">
+            <span>TERMS:</span><hr>
+            <a href="#">Terms & Conditions</a><br>
+            <a href="#">Privacy Policy</a><br>
+        </div>
+        <div class="slice">
+            <span>FIND TIYPN:</span><hr>
+            <a href="https://www.instagram.com/t1ypn/"><i class="fab fa-instagram"></i>@t1ypn</a><br>
+            <a href="https://twitter.com/t1ypn"><i class="fab fa-twitter"></i>@t1ypn</a><br>
+            <a href="mailto:tiypnthetiger@gmail.com" id="wide"><i class="far fa-envelope"></i>tiypnthetiger@gmail.com</a><br>
+        </div>
+           <br>
+           <span id=col>© COPYRIGHT TIYPN 2020</span>
+       </div>
+    </div>
 </div>
 </body>
 </html>
