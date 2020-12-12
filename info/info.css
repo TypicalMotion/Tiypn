@@ -1,0 +1,21 @@
+* {
+  font-family:arial;
+}
+
+.content {
+  margin-top:65px;
+}
+
+h1 {
+  display:inline-block;
+  color:var(--th2);
+  background-color:var(--th);
+  margin:0;
+  margin-bottom:5px;
+}
+
+p {
+  color:var(--th);
+  font-size:20px;
+  margin:0;
+}
